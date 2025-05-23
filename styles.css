@@ -9,11 +9,9 @@ body {
   padding: 0;
   margin: 0;
 }
-.main-container {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
+
+.main-container{
+  display: flex;
 }
 
 .image-container {
@@ -31,13 +29,14 @@ body {
 .sidebar-container {
   position: absolute;
   padding: 5px 0 5px 0;
-  height: 10%;
+  height: 15%;
   width: 100%;
   z-index: 1;
-  top: 25%;
+  top: 23%;
   left: 0;
   display: flex;
   justify-content: center;
+  align-items: center;
   background: rgba(0, 0, 0, 0.5);
 }
 
@@ -49,4 +48,29 @@ body {
 .sidebar-title {
   color: white;
   font-family: "norse_bold";
+  font-size: 9rem;
+}
+
+.user-container{
+  position: relative;
+}
+.intro-container{
+  color: black;
+  border: solid 2 black;
+}
+
+input{
+  outline: none;
+  border: 2px solid #E5E7EB;
+}
+
+input:focus {
+  outline: none;
+  border: 2px solid blue;
+  box-shadow: 1px 1px 5px;
+}
+
+input[type="password"]:invalid{
+  outline: none;
+  border: 2px solid red;
 }
