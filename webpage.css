@@ -76,6 +76,11 @@ p {
 
 section {
   display: flex;
+  padding-bottom: 3px;
+}
+
+section > div {
+  width: 40%;
 }
 
 label,
@@ -88,4 +93,33 @@ input {
 input {
   border: solid 0.5px #e5e7eb;
   border-radius: 1px;
+}
+
+.sign-up {
+  padding: 5px 0 0 15px;
+  font-size: 0.2rem;
+}
+
+button {
+  background-color: #596d48;
+  border-color: #596d48;
+  border-radius: 2px;
+  color: white;
+  font-size: 0.2rem;
+}
+
+.log-in {
+  font-size: 0.3rem;
+}
+a {
+  color: #596d48;
+  text-decoration: none;
+}
+
+label {
+  letter-spacing: 1px;
+  font-size: 3px;
+}
+input:focus {
+  border: solid 0.5px blue !important;
 }
