@@ -18,6 +18,7 @@
   position: relative;
   height: 100vh;
   overflow: hidden;
+  width: 45vw;
 }
 .background-image {
   object-fit: cover;
@@ -28,7 +29,7 @@
 .sidebar-container {
   position: absolute;
   padding: 5px 0 5px 0;
-  height: 10%;
+  height: 15%;
   width: 100%;
   z-index: 1;
   top: 25%;
@@ -40,12 +41,36 @@
 
 .odin-logo {
   object-fit: cover;
-  height: 90%;
+  height: 100%;
 }
 
 .sidebar-title {
   color: white;
   font-family: "norse_bold";
+  font-size: 8rem;
+}
+
+.footer-container {
+  position: absolute;
+  top: 95%;
+  left: 0;
+  height: 5%;
+  z-index: 1;
+  width: 100%;
+}
+
+footer {
+  text-align: center;
+}
+
+footer > p {
+  color: white;
+  font-size: 1rem;
+}
+
+footer > p > a {
+  color: white;
+  text-decoration: underline;
 }
 
 .information-container {
@@ -56,22 +81,22 @@
 
 .welcome {
   border: solid 0.5px #e5e7eb;
-  padding: 10px 0 0 15px;
+  padding: 20px 0 0 30px;
 }
 
 p {
   line-height: 1;
-  font-size: 0.4rem;
+  font-size: 2rem;
   font-weight: 500;
 }
 
 .user-info {
-  box-shadow: 0px 0px 3px 0.1px #ebeaea;
-  padding: 0 0 5px 15px;
+  box-shadow: 0px 0px 15px 0.1px #ebeaea;
+  padding: 0 0 5px 30px;
 }
 
 .form-intro {
-  font-size: 0.4rem;
+  font-size: 2rem;
 }
 
 section {
@@ -85,7 +110,7 @@ section > div {
 
 label,
 input {
-  font-size: 0.2rem;
+  font-size: 2rem;
   font-weight: 500;
   display: block;
 }
@@ -96,20 +121,22 @@ input {
 }
 
 .sign-up {
-  padding: 5px 0 0 15px;
-  font-size: 0.2rem;
+  padding: 20px 0 0 30px;
+  font-size: 2rem;
 }
 
 button {
   background-color: #596d48;
   border-color: #596d48;
-  border-radius: 2px;
+  border-radius: 10px;
   color: white;
-  font-size: 0.2rem;
+  font-size: 1.5rem;
+  padding: 15px;
+  box-shadow: 0px 0px 5px 0.1px black;
 }
 
 .log-in {
-  font-size: 0.3rem;
+  font-size: 2rem;
 }
 a {
   color: #596d48;
@@ -117,9 +144,15 @@ a {
 }
 
 label {
-  letter-spacing: 1px;
-  font-size: 3px;
+  letter-spacing: 5px;
+  font-size: 1rem;
 }
 input:focus {
   border: solid 0.5px blue !important;
+  outline: none;
+  box-shadow: 0px 0px 4px 1px #dddada;
+}
+
+input[type="password"]:invalid {
+  border: solid 0.5px red;
 }
